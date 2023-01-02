@@ -3,8 +3,13 @@ module ApplicationHelper
         data_usa.strftime("%d/%m/%Y")
     end
 
-    def aplication_name
-        "CRIPTO WALLET APP"
+    def rails_ambience_br
+        if Rails.env.development?
+            "Desenvolvimento"
+    elsif Rails.env.production?
+              "Produção"
+        else 
+            "Teste" 
     end
-    
+  end
 end

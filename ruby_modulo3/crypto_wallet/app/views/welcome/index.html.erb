@@ -1,11 +1,9 @@
 <p><strong>Data:</strong> <%= date_br(Date.today)%></p>
 
 
-<h1>Welcome to ruby</h1>
+<%= render "menu" %>
 
-<ul>
- <li>
- <%= link_to "Cadastro de moeda", "/coins" %>
- </li>
- </ul>
 
+ <p>Você está em ambiente de <%= rails_ambience_br %></p>
+
+<p> Eu sou <%= @nome %></p>
