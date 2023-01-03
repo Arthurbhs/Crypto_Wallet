@@ -22,7 +22,7 @@ namespace :dev do
 
     desc "Cadastramento de moedas"
     task add_coins: :environment do
-      show_spinner("Cdastrando moedas....") do
+      show_spinner("Cadastrando moedas....") do
 coins = [
       {
 description: "Bitcoin",
@@ -51,9 +51,9 @@ desc "Cadastro de mineração"
    task add_mining_types: :environment do
     show_spinner("Cadastrando mineração") do
  mining_types = [
-  {name: "Proof of work", acronym: "PoW"},
-  {name: "Proof of stake", acronym: "PoS"},
-  {name: "Proof of capacity", acronym: "PoC"}
+  {description: "Proof of work", acronym: "PoW"},
+  {description: "Proof of stake", acronym: "PoS"},
+  {description: "Proof of capacity", acronym: "PoC"}
  ]
 
   mining_types.each  do |mining_type|
