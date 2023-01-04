@@ -11,9 +11,9 @@ namespace :dev do
   
      show_spinner("Migrando DB") { %x(rails db:migrate)}
  
+     %x(rails dev:add_mining_types)
      %x(rails dev:add_coins)
 
-     %x(rails dev:add_mining_types)
  
     else
      puts "Você não está em mode de desenvolvimento"
@@ -27,17 +27,20 @@ coins = [
       {
 description: "Bitcoin",
 acronym: "BTC",
-url_image: "https://s3.envato.com/files/246339957/bitc%20isolate%202.jpg"
+url_image: "https://s3.envato.com/files/246339957/bitc%20isolate%202.jpg",
+mining_type: MiningType.find_by(acronym: "PoW")
       },
 {
 description: "Ethereum",
 acronym: "ETH",
-url_image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmf4h45l27Osu-a7PCvC-Hltyi_-pd23jZG13fqbrOepndgXNC4ciLIsoT5eTWXudesvA&usqp=CAU"
+url_image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmf4h45l27Osu-a7PCvC-Hltyi_-pd23jZG13fqbrOepndgXNC4ciLIsoT5eTWXudesvA&usqp=CAU",
+mining_type: MiningType.find_by(acronym: "PoS")
   },
 {
 description: "Dash",
 acronym: "DSH",
-url_image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ91eeq4awRCrO-WyyXc-KqSanvOk61vMvng&usqp=CAU"
+url_image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ91eeq4awRCrO-WyyXc-KqSanvOk61vMvng&usqp=CAU",
+mining_type: MiningType.find_by(acronym: "PoC")
 }
   ]
 
