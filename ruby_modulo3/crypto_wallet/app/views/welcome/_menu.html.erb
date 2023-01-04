@@ -1,10 +1,11 @@
 <h1>Welcome to ruby</h1>
-<p> O indioma utilizado é <%= locale(I18n.locale)%>
+<p> O indioma utilizado é <%= t("USA")%> </p>
+<p><%= I18n.t('hello')%></p>
 <ul>
  <li>
- <%= link_to "Cadastro de moeda", "/coins" %>
+ <%= link_to t("Currency Registration"), "/coins" %>
  </li>
  <li>
- <%= link_to "Cadastros de mineração", mining_types_path %>
+ <%= link_to t("Mining Registration"), mining_types_path %>
  </li>
  </ul>
