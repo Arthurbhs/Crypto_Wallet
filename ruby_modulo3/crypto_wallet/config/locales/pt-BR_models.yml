@@ -1,7 +1,7 @@
 'pt-BR':
   
   activerecord:
-    moodels:
+    models:
       coin:
         one: Moeda
         other: Moedas
@@ -24,3 +24,4 @@
         acronym: Sigla
         updadted_at: Atualizado em
         created_at: Criado para
+  

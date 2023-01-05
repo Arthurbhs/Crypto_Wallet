@@ -31,3 +31,7 @@ pt-BR:
   this is cripto: "Este é o cripto wallet, um app para você cadas trar moedas."
 
   action: "Selecione a ação desejada"
+
+  new coin: "Nova moeda"
+  Are you sure?: "tem certeza?"
+  New Mining Type: "Novo tipo de mineração"

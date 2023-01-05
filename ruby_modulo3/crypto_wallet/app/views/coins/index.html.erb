@@ -2,7 +2,7 @@
 
 <p id="notice"><%= notice %></p>
 
-<h1>Coins</h1>
+<h1><%= Coin.model_name.human(count: @coins.count) %></h1>
 <h2><%= cookies[:curso]%></h1>
 <h2><%= session[:curso]%></h1>
 <table class="table table-hover">
@@ -21,9 +21,9 @@
         <td><%= coin.description %></td>
         <td><%= coin.acronym %></td>
         <td><%= image_tag coin.url_image, size: "50x50" %></td>
-        <td><%= link_to t('links.show'), coin %></td>
-        <td><%= link_to  t('links.edit'), edit_coin_path(coin) %></td>
-        <td><%= link_to  t('links.delet'), coin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('links.show'), coin, class:"btn btn-primary" %></td>
+        <td><%= link_to  t('links.edit'), edit_coin_path(coin), class:"btn btn-warning" %></td>
+        <td><%= link_to  t('links.delet'), coin, method: :delete, data: { confirm: t('Are you sure?') }, class:"btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -31,8 +31,8 @@
 
 <br>
 
-<%= link_to 'New Coin', new_coin_path %>
+<%= link_to t('new coin'), new_coin_path, class:"btn btn-primary" %>
 <br/>
 <br/>
 <br/>
-<a href="/welcome/index">Retornar</a>
+<a  class="btn btn-primary" href="/welcome/index">Retornar</a>

@@ -27,3 +27,7 @@ en:
   this is cripto: "This is crypto wallet, an app for you to bring coins."
 
   action: "Select the desired action"
+
+  new coin: "New coin"
+  Are you sure?: "Are you sure?"
+  New Mining Type: "New Mining Type"
