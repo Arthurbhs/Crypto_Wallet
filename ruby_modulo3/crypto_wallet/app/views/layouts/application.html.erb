@@ -5,15 +5,20 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+       <%= stylesheet_link_tag    'scaffolds', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+
+     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>  
+    <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-<p><strong>Data:</strong> <%= l(Date.today)%></p>
+<p><strong>Data:</strong> <%= l(Date.today)%> -
+<%= params[:controller]%></p>
 </br>
     <%= yield %>
 </br>
-    <p> Feito por Arthur BHS </p>
+    <p> <%= t("made by")%></p>
   </body>
 </html>

@@ -2,11 +2,12 @@ module ApplicationHelper
 
     def rails_ambience_br
         if Rails.env.development?
-            "Desenvolvimento"
+          
+            t("development")
     elsif Rails.env.production?
-              "Produção"
+              t("Produção")
         else 
-            "Teste" 
+            t("Teste") 
     end
   end
 end

@@ -6,7 +6,6 @@ pt-BR:
   hello: "Olá Mundo"
 
   show: "Mostrar"
-
   back: "Voltar"
 
   USA: "Portugues Brasil"
@@ -19,3 +18,12 @@ pt-BR:
   Currency Registration: "Cadastro de moedas"
 
   Mining Registration: "Cadastro de Mineração"
+
+  The language used: "O indioma utilizado é"
+  development: "Desenvolvimento"
+  test: "Teste"
+  production: "Produção"
+
+  ambience: "Você está em ambiente de"
+
+  made by: "Feito por Arthur BHS"
