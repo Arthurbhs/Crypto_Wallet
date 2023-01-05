@@ -1,17 +1,20 @@
-<h1><%= t("welcome") %></h1>
-<p> <%= link_to 'Português', root_path(locale: 'pt-BR')%>
-</p>
 
-<p> <%= link_to 'English', root_path(locale: 'en')%>
-</p>
 <p> <%= t("The language used")%>
  <%= t("USA")%> </p>
-<p><%= I18n.t('hello')%></p>
-<ul>
- <li>
- <%= link_to t("Currency Registration"), "/coins" %>
- </li>
- <li>
- <%= link_to t("Mining Registration"), mining_types_path %>
- </li>
- </ul>
+<div class="jumbotron">
+  <h1 class="display-4"><%= t("welcome") %></h1>
+  <p class="lead"><%= t("this is cripto")%></p>
+  <hr class="my-4">
+  <p><%= t("action") %></p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/coins" role="button"> <%=t("Currency Registration") %></a>
+     <a class="btn btn-primary btn-lg" href="/mining_types" role="button"> <%= t("Mining Registration")%></a>
+  </p>
+</div>
+</p>
+
+
+</p>
+
+
+
