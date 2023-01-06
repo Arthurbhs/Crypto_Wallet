@@ -5,6 +5,7 @@ pt-BR:
 
   hello: "Olá Mundo"
 
+  edit: "Editar"
   show: "Mostrar"
   back: "Voltar"
 
@@ -34,4 +35,11 @@ pt-BR:
 
   new coin: "Nova moeda"
   Are you sure?: "tem certeza?"
+  New Mining Type: "Novo tipo de mineração"
+  
+  description: "Descrição:"
+  acronym: "Sigla:"
+  url_image: "URL da Imagem:"
+
+  editing Mining Type: "Editando tipo de mineção"
   New Mining Type: "Novo tipo de mineração"

@@ -1,8 +1,8 @@
-<h1>Editing Coin</h1>
+<h1><%=t("Editing Coin")%></h1>
 
 <%= render 'form', coin: @coin %>
 
 
-<%= link_to I18n.t('show'), @coin %> |
+<%= link_to I18n.t('show'), @coin, class:"btn btn-primary" %> |
 
-<%= link_to I18n.t('back'), coins_path %>
+<%= link_to I18n.t('back'), coins_path, class:"btn btn-primary" %>

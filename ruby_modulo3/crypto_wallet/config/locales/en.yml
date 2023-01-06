@@ -31,3 +31,12 @@ en:
   new coin: "New coin"
   Are you sure?: "Are you sure?"
   New Mining Type: "New Mining Type"
+
+  Editing Coin: "Editing Coin"
+
+  description: "Description:"
+  acronym: "Acronym:"
+  url_image: "Url_image:"
+  
+  editing Mining Type: "Editing Mining Type"
+  New Mining Type: "New Mining Type"
